@@ -1,4 +1,4 @@
-const URL = "http://127.0.0.1:5000/"
+const URL = "https://aldomrodriguez.pythonanywhere.com/"
 
 
 // Realizamos la solicitud GET al servidor para obtener todos los productos
@@ -24,7 +24,7 @@ fetch(URL + 'usuarios')
                 '<td>' + usuario.apellido + '</td>' +
                 '<td>' + usuario.email + '</td>' +
                 // Mostrar miniatura de la imagen
-                '<td><img src=static/img/' + usuario.imagen_url +' alt="Imagen del usuario" style="width: 100px;"></td>';
+                '<td><img src=https://www.pythonanywhere.com/user/aldomrodriguez/files/home/aldomrodriguez/static/img/' + usuario.imagen_url +' alt="Imagen del usuario" style="width: 100px;"></td>';
             
             //Una vez que se crea la fila con el contenido del producto, se agrega a la tabla utilizando el método appendChild del elemento tablaProductos.
             tablaUsuarios.appendChild(fila);
